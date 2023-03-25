@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: rgb(51, 51, 51);
+	color: #fff;
+	padding: 20px;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+}
+
+.innovation {
+	flex-basis: 300px;
+	margin-bottom: 20px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+}
+
+.innovation img {
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+.innovation h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.innovation p {
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.innovation a {
+	background-color: #333;
+	color: #fff;
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.innovation a:hover {
+	background-color: #666;
+}

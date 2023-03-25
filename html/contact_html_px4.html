@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      /* Global styles */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+      }
+
+      /* Contact form styles */
+      form {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 3rem;
+        background-color: #fff;
+        border-radius: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2c3e50;
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.8);
+      }
+
+      input[type="text"],
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 1rem;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        background-color: #f0f0f0;
+        color: #153a19;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type="text"]:focus,
+      input[type="email"]:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 5px #053222;
+      }
+
+      textarea {
+        resize: none;
+        height: 150px;
+      }
+
+      button[type="submit"] {
+        background-color: #07332a;
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        padding: 1.5rem 3rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      button[type="submit"]:hover {
+        background-color: #093b31;
+      }
+
+      /* Responsive styles */
+      @media (max-width: 767px) {
+        form {
+          padding: 2rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+          padding: 0.8rem;
+          font-size: 1rem;
+        }
+
+        button[type="submit"] {
+          padding: 1rem 2rem;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Contact Us</h1>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
